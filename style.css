@@ -1,0 +1,30 @@
+.calculadora{
+    background-color: rgba(253, 169, 204, 0.788);
+    border-radius: 2%;
+    width: 268px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+    border-color: rgba(253, 169, 204, 0.788);
+    
+}
+.display-box{
+    font-size: 20px;
+    width: 71%;
+    cursor: pointer;
+    background-color: white;
+    border-color: rgba(253, 169, 204, 0.788);
+
+}
+input.button{
+    font-size: 20px;
+    cursor: pointer; 
+    border-color: rgba(253, 169, 204, 0.788);
+ 
+}   
+.button{
+    margin: 1px;
+    width: 60px;
+}
+
