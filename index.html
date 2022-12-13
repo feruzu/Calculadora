@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <table class="calculadora">
+        <tr>
+            <td>
+                <input class="box" type="text" id="resultado" disabled/>
+
+                <!--Borrar-->
+                <input class="button" type="button" value="C" onclick="borrar()" />
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input class="button" type="button" value="1" onclick="btn('1')" />
+                <input class="button" type="button" value="2" onclick="btn('2')" />
+                <input class="button" type="button" value="3" onclick="btn('3')" />
+                <input class="button" type="button" value="/" onclick="btn('/')" />
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input class="button" type="button" value="4" onclick="btn('4')" />
+                <input class="button" type="button" value="5" onclick="btn('5')" />
+                <input class="button" type="button" value="6" onclick="btn('6')" />
+                <input class="button" type="button" value="-" onclick="btn('-')" />
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input class="button" type="button" value="7" onclick="btn('7')" />
+                <input class="button" type="button" value="8" onclick="btn('8')" />
+                <input class="button" type="button" value="9" onclick="btn('9')" />
+                <input class="button" type="button" value="+" onclick="btn('+')" />
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input class="button" type="button" value="." onclick="btn('.')" />
+                <input class="button" type="button" value="0" onclick="btn('0')" />
+                <input class="button" type="button" value="X" onclick="btn('X')" />
+
+                <!--Calculo-->
+                <input class="button" type="button" value="=" onclick="calculo()" />
+            </td>
+        </tr>
+    </table>
+
+    <script src="app.js"></script>
+</body>
+</html>
