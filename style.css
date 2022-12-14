@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 body {
     background: #ececec;
     width: 100%;
@@ -16,11 +15,11 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);  
+    transform: translate(-50%, -50%);
     border-radius: 25px;
     border: none;
     box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.55),
-    10px 10px 15px rgba(70, 70, 70, 0.12);
+        10px 10px 15px rgba(70, 70, 70, 0.12);
     padding: 30px;
 }
 
@@ -29,7 +28,7 @@ body {
     cursor: pointer;
     border: none;
     box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.55),
-    10px 10px 15px rgba(70, 70, 70, 0.12);
+        10px 10px 15px rgba(70, 70, 70, 0.12);
 }
 
 #resultado {
@@ -47,7 +46,8 @@ body {
 }
 
 
-#result, #c {
+#result,
+#c {
     background-color: #ebd7d1;
 }
 
@@ -63,23 +63,23 @@ body {
 }
 
 .resultados input:active {
-     box-shadow: none;
-     color: #040f16;
+    box-shadow: none;
+    color: #040f16;
 }
 
 .cuent {
-    border-radius: 25px; 
+    border-radius: 25px;
     border: none;
     box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.55),
-    10px 10px 15px rgba(70, 70, 70, 0.12);
+        10px 10px 15px rgba(70, 70, 70, 0.12);
     margin: 5px;
 }
 
 input {
-    border-radius: 25px; 
+    border-radius: 25px;
     border: none;
     box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.55),
-    10px 10px 15px rgba(70, 70, 70, 0.12);
+        10px 10px 15px rgba(70, 70, 70, 0.12);
     padding: 20px;
     margin: 5px;
     font-size: 20px;
@@ -88,7 +88,7 @@ input {
     cursor: pointer;
 
     /* Este estilo hace que el box-shadow sea visible en dispositivos IOS*/
-    appearance:none;
+    appearance: none;
 }
 
 
@@ -96,7 +96,7 @@ input:active,
 #c:active,
 #s:active {
     box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.55),
-    inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+        inset 10px 10px 15px rgba(70, 70, 70, 0.12);
     color: #E9B8AC;
 }
 
@@ -112,37 +112,29 @@ input:active,
     width: 95%;
 }
 
-@media (max-width: 720px) { 
-     .calculadora {
-       width: 320px;
-       padding: 20px;
-     }
+@media (max-width: 720px) {
+    .calculadora {
+        width: 320px;
+        padding: 20px;
+    }
 
-     .button {
+    .button {
         width: 56px;
-        padding: 20px ;
-        }
+        padding: 20px;
+    }
 
     .resultados input {
         padding: 20px;
     }
-    
 }
 
-@media (max-width: 480px) { 
+@media (max-width: 480px) {
     .calculadora {
-      width: 300px;
-      padding: 10px;
+        width: 300px;
+        padding: 10px;
     }
 
     input {
         font-size: 16px;
-     }
-
-
-
-    
-
-     
-
+    }
 }

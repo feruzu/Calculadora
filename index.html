@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,21 +9,22 @@
     <link rel="stylesheet" href="style.css" />
 
 </head>
+
 <body>
 
     <table class="calculadora">
         <tr>
             <td class="resultados">
                 <div class="cuent">
-                    <input class="box" type="text" id="cuenta" disabled/>
+                    <input class="box" type="text" id="cuenta" disabled />
 
-                    <input class="box" type="text" id="resultado" disabled/>
+                    <input class="box" type="text" id="resultado" disabled />
                 </div>
 
                 <div>
-                       <!--Borrar-->
-                <input id="c" class="button" type="button" value="C" onclick="borrar()" />
-                <input id="s" class="button" type="button" value="/" onclick="btn('/')" />
+                    <!--Borrar-->
+                    <input id="c" class="button" type="button" value="C" onclick="borrar()" />
+                    <input id="s" class="button" type="button" value="/" onclick="btn('/')" />
                 </div>
             </td>
         </tr>
@@ -45,37 +47,26 @@
             </td>
         </tr>
 
-
-
-
         <tr>
             <td class="l">
                 <div class="sig">
                     <input class="button" type="button" value="7" onclick="btn('7')" />
                     <input class="button" type="button" value="8" onclick="btn('8')" />
                     <input class="button" type="button" value="9" onclick="btn('9')" />
-                
+
                     <input id="s" class="button" type="button" value="." onclick="btn('.')" />
                     <input class="button" type="button" value="0" onclick="btn('0')" />
                     <input id="s" class="button" type="button" value="X" onclick="btn('*')" />
                 </div>
 
-                  <!--Calculo-->
-                  <input id="result" class="button" type="button" value="=" onclick="calculo()" />
+                <!--Calculo-->
+                <input id="result" class="button" type="button" value="=" onclick="calculo()" />
             </td>
         </tr>
 
-
-
-        <tr>
-            <td>
-
-
-              
-            </td>
-        </tr>
     </table>
 
     <script src="app.js"></script>
 </body>
+
 </html>
