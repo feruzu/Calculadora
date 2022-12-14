@@ -1,5 +1,148 @@
-.calculadora{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: #ececec;
+    width: 100%;
+}
+
+.calculadora {
+    width: 400px;
+    height: 450px;
     position: absolute;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);  
+    border-radius: 25px;
+    border: none;
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.55),
+    10px 10px 15px rgba(70, 70, 70, 0.12);
+    padding: 30px;
+}
+
+.box {
+    width: 95%;
+    cursor: pointer;
+    border: none;
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.55),
+    10px 10px 15px rgba(70, 70, 70, 0.12);
+}
+
+#resultado {
+    width: 95%;
+    -webkit-text-fill-color: #e6957c;
+}
+
+.resultados {
+    display: flex;
+}
+
+#resultado,
+#cuenta {
+    margin: 0;
+}
+
+
+#result, #c {
+    background-color: #ebd7d1;
+}
+
+#s {
+    background-color: #ebd7d141;
+}
+
+.resultados input {
+    box-shadow: none;
+    background: transparent;
+    -webkit-text-fill-color: #040f16;
+    opacity: 1;
+}
+
+.resultados input:active {
+     box-shadow: none;
+     color: #040f16;
+}
+
+.cuent {
+    border-radius: 25px; 
+    border: none;
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.55),
+    10px 10px 15px rgba(70, 70, 70, 0.12);
+    margin: 5px;
+}
+
+input {
+    border-radius: 25px; 
+    border: none;
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.55),
+    10px 10px 15px rgba(70, 70, 70, 0.12);
+    padding: 20px;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #040f16;
+    cursor: pointer;
+
+    /* Este estilo hace que el box-shadow sea visible en dispositivos IOS*/
+    appearance:none;
+}
+
+
+input:active,
+#c:active,
+#s:active {
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.55),
+    inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+    color: #E9B8AC;
+}
+
+.button {
+    width: 71px;
+}
+
+.l {
+    display: flex;
+}
+
+.sig {
+    width: 95%;
+}
+
+@media (max-width: 720px) { 
+     .calculadora {
+       width: 300px;
+       padding: 20px;
+     }
+
+     .button {
+        width: 56px;
+        padding: 20px ;
+        }
+
+    .resultados input {
+        padding: 20px;
+    }
+    
+}
+
+@media (max-width: 480px) { 
+    .calculadora {
+      width: 300px;
+      padding: 10px;
+    }
+
+    input {
+        font-size: 16px;
+     }
+
+
+
+    
+
+     
+
 }
