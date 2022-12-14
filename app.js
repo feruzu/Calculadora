@@ -1,15 +1,15 @@
 function borrar(){
+    document.getElementById('cuenta').value='';
     document.getElementById('resultado').value='';
-    document.getElementById('resultad').value='';
 }
 
 function btn(value){
-    document.getElementById('resultado').value += value;
+    document.getElementById('cuenta').value += value;
 }
 
 function calculo(){
-    var p = document.getElementById('resultado').value;
+    var p = document.getElementById('cuenta').value;
     var q = eval(p);
-    document.getElementById('resultado').value = p;
-    document.getElementById('resultad').value = q;
+    document.getElementById('cuenta').value = p;
+    document.getElementById('resultado').value = q;
 }
